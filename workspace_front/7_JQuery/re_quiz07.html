@@ -37,19 +37,19 @@
     <script>
         const inputTitle = $('#title');
         const inputContent = $('#content');
-        const inputWrtier = $('#writer');
+        const inputWriter = $('#writer');
         const tableBody = $('#table-body');
 
         $('#register').on('click', () => {
             const title = $('<td>').text(inputTitle.val());
             const content = $('<td>').text(inputContent.val());
-            const writer = $('<td>').text(inputWrtier.val());
+            const writer = $('<td>').text(inputWriter.val());
 
             $('<tr>').append(title, content, writer).appendTo(tableBody);
 
             inputTitle.val('');
             inputContent.val('');
-            inputWrtier.val('');
+            inputWriter.val('');
         });
     </script>
 </body>
