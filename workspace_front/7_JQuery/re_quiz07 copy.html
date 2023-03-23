@@ -91,10 +91,10 @@
       }
     });
 
-    $('#del').on('click', function () {
-      $('.content-title').filter(function () {
-        return $(this).text() === $('#text1').val();
-      }).parent().remove();
+    $('#del').on('click', () => {
+      $('.content-title').filter((_, e) => $(e).text() === $('#text1').val())
+        .parent()
+        .remove()
     });
   </script>
 </body>
