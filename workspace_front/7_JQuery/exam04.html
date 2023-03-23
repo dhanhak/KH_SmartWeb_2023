@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src='https://code.jquery.com/jquery-3.6.4.min.js'></script>
+  <style>
+    div {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 부모 방향 검색 : closest() , parent() -->
+  <!-- 자식 방향 검색 : children() , find() -->
+  <!-- 형제 요소 검색 : prev() , next() , siblings() -->
+  
+  <div id="home">
+    Home
+    <div id="grand_parent">
+      GrandParent
+      <div id="parent01">
+        Parent01
+        <div id="brother01">
+          Brother01
+        </div>
+        <div id="me">
+          Me
+          <div id="sister01">
+            Sister01
+            <div id="baby">
+              Baby01
+            </div>
+          </div>
+          <div id="sister02">
+            Sister02
+          </div>
+        </div>
+        <div id="brother02">
+          Brother02
+        </div>
+      </div>
+      <div id="parent02">
+        Parent02
+      </div>
+    </div>
+</body>
+
+<script>
+
+</script>
+
+</html>
