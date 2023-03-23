@@ -63,7 +63,7 @@
 
     $('#register').on('click', () => {       //동적 이벤트 바인딩
 
-      const title = $('<td>').text(inputTitle.val());
+      const title = $('<td>').text(inputTitle.val()).addClass('content-title');
       const content = $('<td>').text(inputContent.val());
       const writer = $('<td>').text(inputWriter.val());
 
@@ -83,24 +83,18 @@
         // $('#table').append(trLine);
         $('#title,#content,#writer').val('');
 
-        $('#del').on('click', function () {
-          let arr = tableBody.children().get();
-          let targetitle = $('#text1').val();
-          for (let i=0; i < arr.length; i++) {
-            if (arr[i].firstChild.textContent == targetitle) {
-                arr[i].remove();
-                $('#text1').val('');
-                return;
-            }
-          }
-        });
-
         // $('<tr>').append(title, content, writer, tdDelete).appendTo(tableBody);
 
         // inputTitle.val('');
         // inputContent.val('');
         // inputWriter.val('');
       }
+    });
+
+    $('#del').on('click', function () {
+      $('.content-title').filter(function () {
+        return $(this).text() === $('#text1').val();
+      }).parent().remove();
     });
   </script>
 </body>

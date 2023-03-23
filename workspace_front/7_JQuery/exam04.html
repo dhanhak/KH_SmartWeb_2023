@@ -19,7 +19,7 @@
   <!-- 부모 방향 검색 : closest() , parent() -->
   <!-- 자식 방향 검색 : children() , find() -->
   <!-- 형제 요소 검색 : prev() , next() , siblings() -->
-  
+
   <div id="home">
     Home
     <div id="grand_parent">
@@ -52,6 +52,32 @@
 </body>
 
 <script>
+  // console.log($('#me').parent());
+  // console.log($('#me').parent().parent());
+  // console.log($('#me').parent().parent().parent());
+  // console.log($('#me').closest('#grand_parent'));
+
+  // console.log($('#me').children());
+  // console.log($('#me').find('#sister02'));
+  // console.log($('#me').find('#baby'));
+
+  // console.log($('#me').prev());
+  // console.log($('#me').next());
+  // console.log($('#me').siblings());
+
+  // Quiz01. me 를 기준으로 baby 요소를 찾아 backfround 컬러를 pink 적용
+  $('#me').find('#sister01').children().css({ 'background-color': 'pink' });
+  // quiz02. me 를 기준으로 parent02 요소를 찾아 background 컬러를 goldenrod 적용
+  $('#me').parent().next().css({'background-color': 'goldenrod'});
+  // quiz03. sister02 를 시준으로 brother02 를 찾아 backfround 컬러를 forestgreen 적용
+  $('#sister02').parent().next().css({'background':'forestgreen'})
+  // quiz04. home 을 기준으로 sister01을 찾아 background 컬러 violet을 적용
+  $('#home').children().children().children('#me').children('#sister01').css({'background-color':'violet'});
+
+
+
+
+
 
 </script>
 
