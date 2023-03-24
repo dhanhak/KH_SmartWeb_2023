@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    div {
+        position: absolute;
+        border: 1px solid black;
+    }
+
+    .wrapper {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+
+    input {
+        height: 100%;
+    }
+
+    #topbox {
+        width: 100%;
+        height: 80%;
+        overflow-y: auto;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    #box {
+        width: 100%;
+    }
+
+    #bottombox {
+        bottom: 0px;
+        height: 20%;
+        width: 100%;
+    }
+
+    #bottombox input {
+        width: 100%;
+
+    }
+
+    #inputbox {
+        height: 100%;
+        width: 80%;
+        overflow-y: auto;
+    }
+
+    #btnbox {
+        height: 100%;
+        width: 20%;
+        right: 0px;
+    }
+
+    #econbox {
+        width: 300px;
+        height: 240px;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+    }
+
+    #econclose {
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        left: 270px;
+        background-color: gray;
+        border: 0px;
+
+    }
+
+    #econbox img {
+        width: 55px;
+        height: 55px;
+        float: left;
+    }
+
+    #inputbox img,
+    #box img {
+        width: 50px;
+        height: 50px;
+    }
+</style>
+<script>
+    function updateScroll() {
+        var element = document.getElementById("topbox");
+        element.scrollTop = element.scrollHeight;
+    }
+    $(function () {
+
+        $("#econbox>img").on("click", function () {
+            $("#inputbox").append($(this).clone());
+            $("#econbox").slideUp();
+        })
+
+        $("#econbox").hide();
+
+        $("#econ").on("click", function () {
+            $("#econbox").slideDown();
+        })
+
+        $("#econclose").on("click", function () {
+            $("#econbox").slideUp();
+        })
+
+        $("#inputbox").on("keydown", function (e) {
+            if (e.keyCode == 13) {
+                e.preventDefault();
+                var msg = $("#inputbox").html();
+                var tr = $("<tr></tr");
+                tr.append("<td>" + msg);
+                $("#box").append(tr);
+                $("#inputbox").html("");
+                updateScroll();
+            }
+        })
+    })
+</script>
+
+<body>
+    <div class="wrapper">
+
+        <div id=topbox>
+            <table id="box"></table>
+        </div>
+
+        <div id="bottombox">
+            <div id="inputbox" contenteditable="true"></div>
+            <div id=btnbox> <input type="button" value="econ" id="econ"></div>
+        </div>
+
+        <div id="econbox">
+            <input type="button" value="X" id="econclose">
+            <img src="1026.png">
+            <img src="1027.png">
+            <img src="1028.png">
+            <img src="1029.png">
+            <img src="1030.png">
+            <img src="1031.png">
+            <img src="1032.png">
+            <img src="1033.png">
+            <img src="1034.png">
+        </div>
+
+    </div>
+</body>
+
+</html>
