@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .content {
+            margin: 20px;
+            width: 600px;
+            height: 100px;
+        }
+
+        .header {
+            height: 25%;
+            width: 100%;
+        }
+
+        .body {
+            height: 75%;
+            width: 100%;
+        }
+
+        .add-text {
+            width: 75%;
+            height: 100%;
+            float: left;
+        }
+
+        .add-text>input {
+            width: 100%;
+            height: 100%;
+        }
+
+        .reply {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+
+        .reply>button {
+            width: 100%;
+            height: 100%;
+        }
+
+        #clone-text {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header"><input type="text" id="name" placeholder="작성자명을 입력해주세요."></div>
+        <div class="body">
+            <div class="add-text"><input type="text" id="text" placeholder="내용을 작성하세요."></div>
+            <div class="reply"><button id="replyButton">Reply</button></div>
+        </div>
+    </div>
+    <br><br>
+
+    <div id="clone-text"></div>
+
+    <script>
+
+        $('#replyButton').on('click', function () {
+            const containerDiv = $('<div>');
+            const headerDiv = $('<div>');
+            const bodyDiv = $('<div>');
+            const addTextDiv = $('<div>');
+            const replyDiv = $('<div>');
+            const inputText = $('<input type="text" id="text">');
+            const replayButton = $('<button id="replyButton">');
+            const delButton = $('<button class="delete">');
+
+            const writer = $('#name').val();
+            const write = $('#text').val();
+            const cloneText = $('#clone-text');
+            
+            if(writer==="" || write===""){
+                alert('작성자이름이나 내용을 작성하세요.');
+                $('#name').val(""), $('#text').val("");
+                return;
+            }
+
+            containerDiv.addClass('content');
+            containerDiv.append(headerDiv.addClass('header'));
+            headerDiv.append(writer);
+            containerDiv.append(bodyDiv.addClass('body'));
+            addTextDiv.addClass('add-text').append(write);
+            bodyDiv.append(addTextDiv);
+            delButton.html('삭제');
+            replyDiv.addClass('reply').append(delButton);
+            bodyDiv.append(replyDiv);
+
+
+
+            cloneText.append(containerDiv);
+            $('#name').val("");
+            $('#text').val("");
+
+        });
+
+        $('#clone-text').on('click', '.delete', function(){
+            $(this).parent().parent().parent().remove();
+        })
+
+
+    </script>
+</body>
+
+</html>
