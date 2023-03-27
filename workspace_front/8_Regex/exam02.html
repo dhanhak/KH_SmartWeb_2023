@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 정규표현식 객체의 test 함수 : 정규표현식에 일치하는 데이터 검색이 성공할시 ture
+        //                                실패 시 false 를 반환하는 함수
+        // i : case insenstive
+        //      또는 ignre case
+
+        let str = '안녕하세요. 저는 Jack 입니다.';
+        let regex = /Jack/;
+
+        let result = regex.test(str);
+        console.log(result);
+
+    </script>
+</body>
+</html>
