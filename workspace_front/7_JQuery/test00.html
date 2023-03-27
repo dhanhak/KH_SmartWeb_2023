@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="fruits">
+        <option value="apple">Apple</option>
+        <option value="mango">Mango</option>
+        <option value="orange">Orange</option>
+    </select>
+    <button id="btn">버튼</button>
+
+    <script>
+        document.getElementById("btn").onclick = function () {
+            let fruits = document.getElementById("fruits");
+            console.log(fruits.selectedIndex); // 의미 알기 공부하기 꼭 나옴
+            console.log(fruits.options[fruits.selectedIndex]); // option은 select 내부에 포함된 함수임.
+
+        }
+
+    </script>
+</body>
+
+</html>

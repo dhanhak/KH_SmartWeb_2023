@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        h4{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="id" placeholder="ID">
+    <button id="check">검증</button>
+    <br>
+    <h3> ID 조건 </h3>
+    <h4> 1. 첫글자는 알파벳 대문자만 가능 <br>
+    2. 나머지는 알파벳 소문자,숫자 또는 _만 가능<br>
+    3. 최소 7자리에서 13자리까지만 허용 </h4>
+    <fieldset>
+        <legend>검증 결과</legend>
+    </fieldset>
+
+    <script>
+        const idcom = /^[A-Z][a-z0-9_]{6,12}$/;
+        $('#check').on('click',function(){
+            const id = $('#id').val();
+            if(idcom.test(id)){
+                $('fieldset').text(id);
+            }else{
+                $('fieldset').text('사용 불가한 ID입니다.');
+            }
+        });
+    </script>
+</body>
+</html>

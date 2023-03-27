@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://code.jquery.com/jquery-3.6.4.min.js'></script>
+</head>
+<body>
+    <button id="btn01">버튼1</button>
+    <button id="btn02">버튼2</button>
+    <button id="btn03">버튼3</button>
+    <button id="btn04">버튼4</button>
+    <button id="btn05">버튼5</button>
+
+    <div id="div1">
+        <div id="div2">
+            
+            
+            
+            
+            <strong>테스트</strong>용 입니다.</div>
+    </div>
+
+    <script>
+        const tag = document.getElementById('div1');
+
+        console.log('textContent : ' + tag.textContent);
+        console.log('innerHTML : ' + tag.innerHTML);
+        console.log('innerText : ' + tag.innerText);
+
+        // $('button').each(function(index,item){
+            // console.log(item.textContent);
+        // });
+    </script>
+</body>
+</html>
