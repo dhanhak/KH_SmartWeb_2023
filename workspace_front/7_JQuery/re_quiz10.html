@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            box-sizing: border-box;
+        }
+
+        #wrapper {
+            position: relative;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+        }
+
+        #iconBox {
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            background-color: #ffc0cb70;
+            display: none;
+        }
+
+        #iconBox .image {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .image img:hover {
+            border: 1px solid dodgerblue;
+        }
+
+        #contents {
+            border: 1px solid black;
+            width: 100%;
+            height: 80%;
+            overflow-y: auto;
+            background-color: steelblue;
+        }
+
+        #contents img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #contents>div {
+            max-width: 200px;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: papayawhip;
+            display: inline-block;
+            word-wrap: break-word;
+            clear: both;
+        }
+
+        #controls {
+            text-align: center;
+            width: 100%;
+            height: 20%;
+        }
+
+        #controls>div {
+            border: 1px solid black;
+            height: 100px;
+            float: left;
+        }
+
+        .chatBox {
+            width: 75%;
+        }
+
+        .chatIcon {
+            width: 25%;
+        }
+
+        .chatIcon button {
+            width: 100%;
+            height: 100%;
+        }
+
+        #controls #chat {
+            text-align: left;
+            border: 1px solid black;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+        }
+
+        #chat img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #chatPop {
+            border: 1px solid dodgerblue;
+            color: dodgerblue;
+            transition-duration: 1s;
+            position: fixed;
+            cursor: pointer;
+        }
+
+        #chatPop:hover {
+            background-color: dodgerblue;
+            color: white;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        function updateScroll() {
+            let element = document.getElementById("contents");
+            $(element).scrollTop(element.scrollHeight);
+        }
+
+        $(function () {
+
+            $("#wrapper").draggable({
+                cancel: "#chat"
+            })
+            $("#wrapper").resizable();
+
+            $("#chat").on("keypress", function (e) {
+
+                if (e.which == 13 && e.shiftKey == false) {
+                    if ($("#chat").html() == "") { return false; }
+                    let content = $("<div>" + $("#chat").html() + "</div>");
+                    let ln = $("<br>");
+                    $(content).hide();
+                    $("#contents").append(content);
+                    $("#contents").append(ln);
+                    content.fadeIn(1000);
+                    $("#chat").html("");
+                    updateScroll();
+                    return false;
+                }
+
+
+            });
+
+
+            $("#iconBtn").on("click", function () {
+                $("#iconBox").slideDown(1000);
+            })
+            $("#iconBox img").on("click", function () {
+                let src = $(this).attr("src");
+                let copy = $("<img>");
+                copy.attr("src", src);
+                $("#chat").append(copy);
+                $("#iconBox").slideUp(1000);
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+
+    <div id=wrapper>
+        <div id="iconBox">
+            <div class="image">
+                <img src="icon1.gif">
+            </div>
+            <div class="image">
+                <img src="icon2.gif">
+            </div>
+            <div class="image">
+                <img src="icon3.gif">
+            </div>
+            <div class="image">
+                <img src="icon4.gif">
+            </div>
+        </div>
+
+        <div id=contents>
+        </div>
+        <div id=controls>
+            <div class="chatBox">
+                <div id="chat" contenteditable="true"></div>
+            </div>
+            <div class="chatIcon">
+                <button id="iconBtn">Icon</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

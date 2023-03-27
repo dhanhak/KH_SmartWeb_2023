@@ -30,6 +30,7 @@
     #topbox {
         width: 100%;
         height: 80%;
+        background-color: aqua;
         overflow-y: auto;
         word-wrap: break-word;
         word-break: break-all;
@@ -37,6 +38,7 @@
 
     #box {
         width: 100%;
+        
     }
 
     #bottombox {
@@ -117,7 +119,7 @@
             if (e.keyCode == 13) {
                 e.preventDefault();
                 var msg = $("#inputbox").html();
-                var tr = $("<tr></tr");
+                var tr = $("<tr></tr>");
                 tr.append("<td>" + msg);
                 $("#box").append(tr);
                 $("#inputbox").html("");
