@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <form action="result.html" id="idForm">
+        <input type="text" placeholder="ID를 입력하세요." id="id"><br>
+        <input type="text" placeholder="Phone를 입력하세요." id="phone"><br>
+        <button id="btn">제출</button>
+    </form>
+
+    <script>
+        let idf = document.querySelector('#idForm');
+
+        let idRegex = /^[A-Z][A-Za-z0-9]/;
+        let phoneRegex = /^01\d-?\d{4}-?\d{4}$/;
+
+
+        $('#btn').on('click',function(){
+        // document.querySelector('#btn').addEventListener('click', function () {
+            let id = document.getElementById("id").value;
+            let phone = document.getElementById("phone").value;
+
+            let result1 = idRegex.test(id);
+            let result2 = phoneRegex.test(phone);
+
+            if (!result1) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '아이디를 다시 확인해 주세요.'
+                });
+                return false;
+            }
+
+            if (!result2) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: '핸드폰 번호를 다시 확인해 주세요.'
+                });
+                return false;
+            }
+        });
+
+    </script>
+</body>
+
+</html>
