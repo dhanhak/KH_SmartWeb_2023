@@ -1,0 +1,2890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <table border="1px">
+        <tr>
+            <th>제목</th>
+            <th>평점</th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script>
+        let str = `<div class="list_area daily_img">
+
+      <ul class="img_list">
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=783769&weekday=wed" title="내 남편과 결혼해줘">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/783769/thumbnail/thumbnail_IMAG10_38315b71-0d00-4a96-b00f-4da07abdc77f.jpg" width="83" height="90" title="내 남편과 결혼해줘" alt="내 남편과 결혼해줘">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=783769&weekday=wed" title="내 남편과 결혼해줘">내 남편과 결...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("783769", this)">LICO / 성소작</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.50%">평점</em></span>
+
+             <strong>9.95</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=783769&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=747269&weekday=wed" title="전지적 독자 시점">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/747269/thumbnail/thumbnail_IMAG10_55801c29-223f-46a0-a446-2e55d3024e71.jpg" width="83" height="90" title="전지적 독자 시점" alt="전지적 독자 시점">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=747269&weekday=wed" title="전지적 독자 시점">전지적 독자 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("747269", this)">UMI / 슬리피-C / ...</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.51%">평점</em></span>
+
+             <strong>9.95</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=747269&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=774862&weekday=wed" title="조조코믹스">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/774862/thumbnail/thumbnail_IMAG10_de9a71cc-8f60-4934-af66-69219950185d.jpg" width="83" height="90" title="조조코믹스" alt="조조코믹스">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+               <span class="ico_cut">컷툰</span>
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=774862&weekday=wed" title="조조코믹스">조조코믹스</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("774862", this)">이동건</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.67%">평점</em></span>
+
+             <strong>9.97</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=774862&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=670143&weekday=wed" title="헬퍼 2 : 킬베로스">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/670143/thumbnail/thumbnail_IMAG10_d2f956f7-2541-4b97-b933-e4aaa2564d14.jpg" width="83" height="90" title="헬퍼 2 : 킬베로스" alt="헬퍼 2 : 킬베로스">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+               <span class="mark_adult_thumb">18세 이상 이용 가능</span>
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=670143&weekday=wed" title="헬퍼 2 : 킬베로스">헬퍼 2 : ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("670143", this)">삭</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:87.82%">평점</em></span>
+
+             <strong>8.78</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=670143&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=701535&weekday=wed" title="격기3반">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/701535/thumbnail/thumbnail_IMAG10_6e2883f1-24dd-40fc-bfe0-762f3fdefba5.jpg" width="83" height="90" title="격기3반" alt="격기3반">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=701535&weekday=wed" title="격기3반">격기3반</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("701535", this)">이학</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:95.12%">평점</em></span>
+
+             <strong>9.51</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=701535&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=784255&weekday=wed" title="먹는 인생">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/784255/thumbnail/thumbnail_IMAG10_116d995b-8080-4379-b0ea-2956868f7c7f.jpg" width="83" height="90" title="먹는 인생" alt="먹는 인생">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+               <span class="ico_cut">컷툰</span>
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=784255&weekday=wed" title="먹는 인생">먹는 인생</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("784255", this)">홍끼</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.63%">평점</em></span>
+
+             <strong>9.96</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=784255&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=791253&weekday=wed" title="비즈니스 여친">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/791253/thumbnail/thumbnail_IMAG10_5695b0f0-2b41-4ce5-96d1-97ced979161b.jpg" width="83" height="90" title="비즈니스 여친" alt="비즈니스 여친">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+               <span class="mark_adult_thumb">18세 이상 이용 가능</span>
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=791253&weekday=wed" title="비즈니스 여친">비즈니스 여친</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("791253", this)">루즌아 / 서해</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:97.83%">평점</em></span>
+
+             <strong>9.78</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=791253&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=717481&weekday=wed" title="일렉시드">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/717481/thumbnail/thumbnail_IMAG10_abd208ef-46dd-42ef-942e-df70b9e27386.jpg" width="83" height="90" title="일렉시드" alt="일렉시드">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=717481&weekday=wed" title="일렉시드">일렉시드</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("717481", this)">손제호 / 제나</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.42%">평점</em></span>
+
+             <strong>9.84</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=717481&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=783056&weekday=wed" title="여고생 드래곤">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/783056/thumbnail/thumbnail_IMAG10_7ac6c5fe-1072-4543-b966-4f6456037eda.jpg" width="83" height="90" title="여고생 드래곤" alt="여고생 드래곤">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=783056&weekday=wed" title="여고생 드래곤">여고생 드래곤</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("783056", this)">땅콩</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.70%">평점</em></span>
+
+             <strong>9.97</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=783056&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=750184&weekday=wed" title="나쁜사람">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/750184/thumbnail/thumbnail_IMAG10_113cf716-dc7d-4f97-b6a9-a904b55c0ff4.jpg" width="83" height="90" title="나쁜사람" alt="나쁜사람">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=750184&weekday=wed" title="나쁜사람">나쁜사람</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("750184", this)">둠스</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:96.70%">평점</em></span>
+
+             <strong>9.67</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=750184&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=738694&weekday=wed" title="튜토리얼 탑의 고인물">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/738694/thumbnail/thumbnail_IMAG10_728d40b3-1224-4e00-b7a8-d16d9adbe137.jpg" width="83" height="90" title="튜토리얼 탑의 고인물" alt="튜토리얼 탑의 고인물">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=738694&weekday=wed" title="튜토리얼 탑의 고인물">튜토리얼 탑의...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("738694", this)">토프 / 방구석김씨</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:97.66%">평점</em></span>
+
+             <strong>9.77</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=738694&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=761498&weekday=wed" title="엔딩 후 서브남을 주웠다">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/761498/thumbnail/thumbnail_IMAG10_4d93ca19-d111-4c72-be78-4a1048c59185.jpg" width="83" height="90" title="엔딩 후 서브남을 주웠다" alt="엔딩 후 서브남을 주웠다">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=761498&weekday=wed" title="엔딩 후 서브남을 주웠다">엔딩 후 서브...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("761498", this)">정서 / 황도톨</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.72%">평점</em></span>
+
+             <strong>9.97</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=761498&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=795333&weekday=wed" title="기묘한 만화">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/795333/thumbnail/thumbnail_IMAG10_51045ae6-4a22-49df-b210-08e0b980d33a.jpg" width="83" height="90" title="기묘한 만화" alt="기묘한 만화">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=795333&weekday=wed" title="기묘한 만화">기묘한 만화</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("795333", this)">몬킬</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:95.97%">평점</em></span>
+
+             <strong>9.60</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=795333&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=667573&weekday=wed" title="연놈">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/667573/thumbnail/thumbnail_IMAG10_71dd6b56-3beb-4c03-82ce-d77cb470c46e.jpg" width="83" height="90" title="연놈" alt="연놈">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=667573&weekday=wed" title="연놈">연놈</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("667573", this)">상하</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.44%">평점</em></span>
+
+             <strong>9.84</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=667573&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=783523&weekday=wed" title="내가 죽기로 결심한 것은">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/783523/thumbnail/thumbnail_IMAG10_676fcfd3-8cba-4cdd-9e7a-790433b51f13.jpg" width="83" height="90" title="내가 죽기로 결심한 것은" alt="내가 죽기로 결심한 것은">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=783523&weekday=wed" title="내가 죽기로 결심한 것은">내가 죽기로 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("783523", this)">YUJU</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.72%">평점</em></span>
+
+             <strong>9.97</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=783523&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=750826&weekday=wed" title="빌드업">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/750826/thumbnail/thumbnail_IMAG10_f8d538d7-7ee8-4725-99f6-2b7e61386066.jpg" width="83" height="90" title="빌드업" alt="빌드업">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=750826&weekday=wed" title="빌드업">빌드업</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("750826", this)">911</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.21%">평점</em></span>
+
+             <strong>9.82</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=750826&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=800312&weekday=wed" title="이십팔세기 광팬">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/800312/thumbnail/thumbnail_IMAG10_972c7673-058b-4da1-9f44-ab4a7546b1a1.jpg" width="83" height="90" title="이십팔세기 광팬" alt="이십팔세기 광팬">
+
+             <span class="mask"></span>
+
+             <span class="ico_new2">NEW</span>
+
+             
+
+             
+
+             
+
+               <span class="ico_cut">컷툰</span>
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=800312&weekday=wed" title="이십팔세기 광팬">이십팔세기 광팬</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("800312", this)">컷부</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.10%">평점</em></span>
+
+             <strong>9.91</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=800312&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=799267&weekday=wed" title="안녕, 나의 수집">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/799267/thumbnail/thumbnail_IMAG10_5d97e254-1b7f-457d-a7e4-fbad48bfda3b.jpg" width="83" height="90" title="안녕, 나의 수집" alt="안녕, 나의 수집">
+
+             <span class="mask"></span>
+
+             <span class="ico_new2">NEW</span>
+
+             
+
+             
+
+             
+
+               <span class="ico_cut">컷툰</span>
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=799267&weekday=wed" title="안녕, 나의 수집">안녕, 나의 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("799267", this)">하린</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.53%">평점</em></span>
+
+             <strong>9.95</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=799267&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=790404&weekday=wed" title="쓰레기는 쓰레기통에!">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/790404/thumbnail/thumbnail_IMAG10_36c39d83-36b6-406c-bcda-3a8e57d2079c.jpg" width="83" height="90" title="쓰레기는 쓰레기통에!" alt="쓰레기는 쓰레기통에!">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=790404&weekday=wed" title="쓰레기는 쓰레기통에!">쓰레기는 쓰레...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("790404", this)">EDDiERiNG</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.73%">평점</em></span>
+
+             <strong>9.97</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=790404&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=795542&weekday=wed" title="칼에 취한 밤을 걷다">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/795542/thumbnail/thumbnail_IMAG10_90f91595-4c35-42a5-b90e-c11cd3d0e4a2.jpg" width="83" height="90" title="칼에 취한 밤을 걷다" alt="칼에 취한 밤을 걷다">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=795542&weekday=wed" title="칼에 취한 밤을 걷다">칼에 취한 밤...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("795542", this)">JP / 송민 / 유진성</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.59%">평점</em></span>
+
+             <strong>9.86</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=795542&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=748536&weekday=wed" title="사상최강">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/748536/thumbnail/thumbnail_IMAG10_b4fc1590-1577-4d48-8cb1-c0292ee0c827.jpg" width="83" height="90" title="사상최강" alt="사상최강">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=748536&weekday=wed" title="사상최강">사상최강</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("748536", this)">이단아 / 황규영</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.93%">평점</em></span>
+
+             <strong>9.89</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=748536&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=742105&weekday=wed" title="미래의 골동품 가게">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/742105/thumbnail/thumbnail_IMAG10_82cbc063-7e95-426f-a6f1-138ab7b6c74d.jpg" width="83" height="90" title="미래의 골동품 가게" alt="미래의 골동품 가게">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=742105&weekday=wed" title="미래의 골동품 가게">미래의 골동품...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("742105", this)">구아진</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.72%">평점</em></span>
+
+             <strong>9.97</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=742105&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=728126&weekday=wed" title="고삼무쌍">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/728126/thumbnail/thumbnail_IMAG10_7629c6e3-cf87-42d0-b2b4-e568f1dca526.jpg" width="83" height="90" title="고삼무쌍" alt="고삼무쌍">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=728126&weekday=wed" title="고삼무쌍">고삼무쌍</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("728126", this)">B급달궁 / 하마</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.29%">평점</em></span>
+
+             <strong>9.83</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=728126&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=710747&weekday=wed" title="세상은 돈과 권력">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/710747/thumbnail/thumbnail_IMAG10_62a436dc-7b3e-405a-b143-a7ecf2cd0485.jpg" width="83" height="90" title="세상은 돈과 권력" alt="세상은 돈과 권력">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=710747&weekday=wed" title="세상은 돈과 권력">세상은 돈과 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("710747", this)">한동우 / 이도희</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.80%">평점</em></span>
+
+             <strong>9.88</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=710747&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=789434&weekday=wed" title="베스트 프렌드">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/789434/thumbnail/thumbnail_IMAG10_bbd19c66-9c64-46bb-8757-eaa3d0fe6bfb.jpg" width="83" height="90" title="베스트 프렌드" alt="베스트 프렌드">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+               <span class="mark_adult_thumb">18세 이상 이용 가능</span>
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=789434&weekday=wed" title="베스트 프렌드">베스트 프렌드</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("789434", this)">망순</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.48%">평점</em></span>
+
+             <strong>9.95</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=789434&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=748535&weekday=wed" title="마른 가지에 바람처럼">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/748535/thumbnail/thumbnail_IMAG10_8c455d23-9049-476c-957c-8b3609d20441.jpg" width="83" height="90" title="마른 가지에 바람처럼" alt="마른 가지에 바람처럼">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=748535&weekday=wed" title="마른 가지에 바람처럼">마른 가지에 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("748535", this)">화음 / 달새울</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.78%">평점</em></span>
+
+             <strong>9.98</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=748535&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=793887&weekday=wed" title="물고기로 살아남기">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/793887/thumbnail/thumbnail_IMAG10_00b0028c-4afc-45be-b3f6-62d316420254.jpg" width="83" height="90" title="물고기로 살아남기" alt="물고기로 살아남기">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=793887&weekday=wed" title="물고기로 살아남기">물고기로 살아...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("793887", this)">동우</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:95.48%">평점</em></span>
+
+             <strong>9.55</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=793887&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=797443&weekday=wed" title="운명을 보는 회사원">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/797443/thumbnail/thumbnail_IMAG10_4f8e0f32-feee-4a8a-a9a6-2c0db521342c.jpg" width="83" height="90" title="운명을 보는 회사원" alt="운명을 보는 회사원">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=797443&weekday=wed" title="운명을 보는 회사원">운명을 보는 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("797443", this)">영완(映完) / 임성욱</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.43%">평점</em></span>
+
+             <strong>9.94</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=797443&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=671421&weekday=wed" title="언덕 위의 제임스">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/671421/thumbnail/thumbnail_IMAG10_a98afd2e-d632-49f3-bdda-42827fff493f.jpg" width="83" height="90" title="언덕 위의 제임스" alt="언덕 위의 제임스">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=671421&weekday=wed" title="언덕 위의 제임스">언덕 위의 제...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("671421", this)">쿠당탕</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.18%">평점</em></span>
+
+             <strong>9.92</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=671421&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=799467&weekday=wed" title="내겐 너무 소란한 결혼">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/799467/thumbnail/thumbnail_IMAG10_bb0f8a26-1123-4529-a486-639d75f215cd.jpg" width="83" height="90" title="내겐 너무 소란한 결혼" alt="내겐 너무 소란한 결혼">
+
+             <span class="mask"></span>
+
+             <span class="ico_new2">NEW</span>
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=799467&weekday=wed" title="내겐 너무 소란한 결혼">내겐 너무 소...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("799467", this)">이지이 / L-포스 / 노...</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.56%">평점</em></span>
+
+             <strong>9.86</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=799467&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=730425&weekday=wed" title="판타지 여동생!">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/730425/thumbnail/thumbnail_IMAG10_1021f165-b14c-480b-bf82-3e9d622472ea.jpg" width="83" height="90" title="판타지 여동생!" alt="판타지 여동생!">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=730425&weekday=wed" title="판타지 여동생!">판타지 여동생!</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("730425", this)">유누</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.43%">평점</em></span>
+
+             <strong>9.84</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=730425&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=725829&weekday=wed" title="아도나이">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/725829/thumbnail/thumbnail_IMAG10_b7460a77-7be4-46c4-b3da-36655b868736.jpg" width="83" height="90" title="아도나이" alt="아도나이">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=725829&weekday=wed" title="아도나이">아도나이</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("725829", this)">주동근</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.12%">평점</em></span>
+
+             <strong>9.91</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=725829&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=800390&weekday=wed" title="하얀 사자의 비밀 신부">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/800390/thumbnail/thumbnail_IMAG10_3dbc74c0-0f3a-417c-813f-30873e601270.jpg" width="83" height="90" title="하얀 사자의 비밀 신부" alt="하얀 사자의 비밀 신부">
+
+             <span class="mask"></span>
+
+             <span class="ico_new2">NEW</span>
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=800390&weekday=wed" title="하얀 사자의 비밀 신부">하얀 사자의 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("800390", this)">봉비 / 임혜</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:95.84%">평점</em></span>
+
+             <strong>9.58</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=800390&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=796466&weekday=wed" title="영웅&amp;마왕&amp;악당">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/796466/thumbnail/thumbnail_IMAG10_ee77ac0f-a834-493d-afda-a02b5cb105af.jpg" width="83" height="90" title="영웅&amp;마왕&amp;악당" alt="영웅&amp;마왕&amp;악당">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=796466&weekday=wed" title="영웅&amp;마왕&amp;악당">영웅&amp;...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("796466", this)">모모 / 무영자</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.16%">평점</em></span>
+
+             <strong>9.92</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=796466&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=755668&weekday=wed" title="마녀와 용의 신혼일기">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/755668/thumbnail/thumbnail_IMAG10_c81d362f-b210-414b-8083-771529e29a2c.jpg" width="83" height="90" title="마녀와 용의 신혼일기" alt="마녀와 용의 신혼일기">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=755668&weekday=wed" title="마녀와 용의 신혼일기">마녀와 용의 ...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("755668", this)">뉴릉이 / 디망 / 바리달</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.65%">평점</em></span>
+
+             <strong>9.96</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=755668&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=771718&weekday=wed" title="수요웹툰의 나강림">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/771718/thumbnail/thumbnail_IMAG10_f35d7712-6a9b-47f1-b956-28cb61000e59.jpg" width="83" height="90" title="수요웹툰의 나강림" alt="수요웹툰의 나강림">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=771718&weekday=wed" title="수요웹툰의 나강림">수요웹툰의 나...</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("771718", this)">이경민 / 송준혁</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:98.75%">평점</em></span>
+
+             <strong>9.88</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=771718&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=783861&weekday=wed" title="헤어지면 죽음">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/783861/thumbnail/thumbnail_IMAG10_63956c8e-ad91-46cd-993d-55a1ba89c987.jpg" width="83" height="90" title="헤어지면 죽음" alt="헤어지면 죽음">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=783861&weekday=wed" title="헤어지면 죽음">헤어지면 죽음</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("783861", this)">봄소희 / KYMA</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:99.19%">평점</em></span>
+
+             <strong>9.92</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=783861&weekday=wed">전체보기</a></dd>
+
+          </dl>
+
+         </li>
+
+       
+
+         <li>
+
+          <div class="thumb">
+
+            <a href="/webtoon/list?titleId=765158&weekday=wed" title="괴물공작의 딸">
+
+             <img onerror="this.src="https://ssl.pstatic.net/static/comic/images/migration/common/blank.gif"" src="https://shared-comic.pstatic.net/thumb/webtoon/765158/thumbnail/thumbnail_IMAG10_3376b6f5-3525-4bb0-ac80-8a3bf93c1b58.jpg" width="83" height="90" title="괴물공작의 딸" alt="괴물공작의 딸">
+
+             <span class="mask"></span>
+
+             
+
+             
+
+             
+
+             
+
+             
+
+               <em class="ico_updt"></em>
+
+             
+
+             
+
+            </a>
+
+          </div>
+
+          <dl>
+
+          <dt>
+
+            <a href="/webtoon/list?titleId=765158&weekday=wed" title="괴물공작의 딸">괴물공작의 딸</a>
+
+          </dt>
+
+
+
+          <dd class="desc">
+
+            <a href="#" onclick="return artistAction.viewArtist("765158", this)">한바다 / 찬란</a>
+
+          </dd>
+
+
+
+          <dd>
+
+           
+
+           
+
+           
+
+            <div class="rating_type">
+
+             <span class="star"><em style="width:95.73%">평점</em></span>
+
+             <strong>9.57</strong>
+
+            </div>
+
+          </dd>
+
+          <dd class="more"><a href="/webtoon/list?titleId=765158&weekday=wed">전체보기</a></dd>`;
+
+        // consloe.log 에 웹툰 제목과 평점을 목두 출력해주세요.
+
+        let regex = /alt="(.*?)">.*?<strong>(.*?)<\/strong>/gs;
+
+
+        while (regex.exec(str) != null) {
+            // console.log(RegExp.$1 +'\t\t'+ RegExp.$2);
+            let title = RegExp.$1;
+            let star = RegExp.$2;
+            
+            let tbody = $('#tbody');
+            let Tr = $('<tr>');
+            let Td1 = $('<td>');
+            let Td2 = $('<td>');
+                
+            let titleTd = Td1.append(title);
+            let starTd = Td2.append(star);
+
+            Tr.append(titleTd).append(starTd).appendTo(tbody);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

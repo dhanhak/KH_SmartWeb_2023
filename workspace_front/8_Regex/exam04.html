@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    
+    <!-- 페이지 이동 관련 기법 -->
+    <!-- 1. Hyperlink : anker 태그 -->
+
+    <a href="exam03.html">Exam03 로 이동</a>
+
+    <!-- 2. JavaScript 를 활용하여 주소창 조작 -->
+
+    <button id="toExam04">버튼 Exam04로 이동</button>
+
+    <script>
+        document.querySelector('#toExam04').addEventListener('click', function () { 
+            location.href="quiz04.html";
+        });
+
+    </script>
+
+    <!-- 3. Form 태그를 활용한 submit -->
+    
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let str = `안녕하세요~ 저는 Jane 입니다. 
+        급한 용무라면 010-4321-1234 or 010-1144-9988 010-1144-9778 010-1224-9933 로 연락 주세요.`;
+
+        let regex = /(01\d-?\d{4}-?\d{4}){1,11}/g;
+
+        while(result = regex.exec(str)){
+            console.log(result[1]);
+        }
+
+        
+
+
+
+
+
+        // let regex = /01\d(-\d{4}){2} or 01\d(-\d{4}){2}/;
+        // let result = regex.exec(str);
+
+        // console.log('$& : ' + result[0]);
+
+        // console.log('$1 : ' + result[1]);
+        // console.log('$2 : ' + RegExp.$1);
+
+        // console.log('$2 : ' + result[2]);
+        // console.log('$2 : ' + RegExp.$2);
+
+
+    </script>
+</body>
+
+</html>
