@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,9 @@
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
+
 <body>
-    
+
     <!-- 페이지 이동 관련 기법 -->
     <!-- 1. Hyperlink : anker 태그 -->
 
@@ -19,15 +21,20 @@
     <button id="toExam04">버튼 Exam04로 이동</button>
 
     <script>
-        document.querySelector('#toExam04').addEventListener('click', function () { 
-            location.href="quiz04.html";
+        document.querySelector('#toExam04').addEventListener('click', function () {
+            location.href = "quiz04.html";
         });
 
     </script>
 
     <!-- 3. Form 태그를 활용한 submit -->
-    
+    <form action="quiz04.html">
+        <input type="text" placeholder="quiz04로 보낼 메세지">
+        <button>제출</button>
+    </form>
+
 
 
 </body>
+
 </html>
