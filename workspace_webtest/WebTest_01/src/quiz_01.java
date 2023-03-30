@@ -48,7 +48,6 @@ public class quiz_01 {
 		
 		driver.findElement(By.linkText("결제하기")).click();
 		
-		
 			
 		}
 		

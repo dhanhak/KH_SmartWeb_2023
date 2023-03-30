@@ -6,14 +6,18 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Exam_02 {
 	public static void main(String[] args) throws Exception {
-
-		WebDriver driver = new ChromeDriver();
+		
+		ChromeOptions options = new ChromeOptions();
+//		options.addArguments("--headless");
+		
+		WebDriver driver = new ChromeDriver(options);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
