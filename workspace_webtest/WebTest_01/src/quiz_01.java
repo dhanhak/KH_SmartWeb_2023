@@ -39,14 +39,14 @@ public class quiz_01 {
 		
 		Thread.sleep(500);
 		driver.findElement(By.name("deliv_name")).sendKeys("권지수");
-		driver.findElement(By.name("deliv_call")).sendKeys("010-5213-4666");
-		driver.findElement(By.linkText("주소찾기")).click();
-		
-		driver.findElement(By.name("deliv_name")).sendKeys("청계그레이츠");
-		
-		driver.findElement(By.linkText("서울 중구 남대문로 120 (그레이츠 청계)")).click();
-		
-		driver.findElement(By.linkText("결제하기")).click();
+//		driver.findElement(By.name("deliv_call")).sendKeys("010-5213-4666");
+//		driver.findElement(By.linkText("주소찾기")).click();
+//		
+//		driver.findElement(By.name("deliv_name")).sendKeys("청계그레이츠");
+//		
+//		driver.findElement(By.linkText("서울 중구 남대문로 120 (그레이츠 청계)")).click();
+//		
+//		driver.findElement(By.linkText("결제하기")).click();
 		
 			
 		}

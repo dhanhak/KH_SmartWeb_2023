@@ -27,8 +27,7 @@ public class Exam_03 {
 			}
 		}
 		
-		driver.findElement(By.id("userId"))
-			.sendKeys("dhanhak");
+		driver.findElement(By.id("userId")).sendKeys("dhanhak");
 		
 		driver.findElement(By.id("userPwd"))
 			.sendKeys("123456");
