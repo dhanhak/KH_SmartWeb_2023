@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <title>Index</title>
 </head>
+
 <body>
-	Hello Tomcat
+	<!-- Post 방식은 클라이언트가 발송하는
+	Request의 Body 영역에 데이터를 담아 보내는 방식
+	- 데이터 전송량에 제한이 거의 없음 ( 큰 데이터도 전송 가능 )
+	- 전송 데이터의 외부적 노출이 없음 ( 최소한의 보안 가능 )
+	
+	- 절대 주소값을 가질 수 없음.
+	
+	Get 방식은 클라이언트가 발송하는
+	Request의 Head 영역에 데이터를 담아 보내는 방식 
+	- 데이터 전송량이 작은 경우 사용 ( 소량 데이터도 전송 가능 )
+	- 전송 데이터의 URL 노출이 발생 ( 최소한의 보안 X )
+	
+	- 절대 주소값을 가질 수 있음.
+	-->
+
+    <form action="Exam_01" method="get">
+        <input type="text"><br>
+        <input type="submit">
+    </form>
+    
 </body>
+
 </html>
