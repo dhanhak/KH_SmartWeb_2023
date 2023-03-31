@@ -1,0 +1,61 @@
+package º¹½À;
+
+import java.sql.Timestamp;
+
+public class TeamDTO {
+	private int id;
+	private String name;
+	private String contact;
+	private Timestamp update_date;
+	
+	
+	public TeamDTO() {
+	}
+
+	public TeamDTO(int id, String name, String contact, Timestamp update_date) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.contact = contact;
+		this.update_date = update_date;
+	}
+
+	public Timestamp getUpdate_date() {
+		return update_date;
+	}
+
+	public void setUpdate_date(Timestamp update_date) {
+		this.update_date = update_date;
+	}
+
+
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+	
+	
+	
+	
+
+}

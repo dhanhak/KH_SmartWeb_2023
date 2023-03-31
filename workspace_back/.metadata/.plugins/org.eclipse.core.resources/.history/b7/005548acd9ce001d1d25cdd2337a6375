@@ -1,0 +1,10 @@
+package 복습;
+
+public class SelectExam {
+	public static void main(String[] args) {
+		// 5. SelectExam 에서 입력된 모든 팀원 정보를 출력할 것.
+		TeamDAO dao = new TeamDAO();
+		dao.select();
+	}
+
+}

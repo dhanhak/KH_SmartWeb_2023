@@ -1,0 +1,59 @@
+package º¹½À;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TeamDAO {
+
+	private Connection getConntion() throws Exception{
+		String url="jdbc:oracle:thin:@localhost:1521:xe";
+		String id="kh";
+		String pw = "th";
+		Connection con = DriverManager.getConnection(url,id,pw);
+		return con;
+	}
+
+
+	public int insert(TeamDTO dto) throws Exception {
+		String sql ="INSERT INTO team_contact VALUES(team_contact_seq.nextval,?,?,sysdate)";
+		try(Connection con = this.getConntion();
+				PreparedStatement pstm = con.prepareStatement(sql);){
+
+			pstm.setString(1, dto.getName());
+			pstm.setString(2, dto.getContact());
+
+			int result = pstm.executeUpdate();
+			return result;
+		}
+	}
+
+	public List<TeamDTO> select() throws Exception{
+		String sql ="SELECT * FROM team_contact";
+		try(Connection con = this.getConntion();
+				PreparedStatement pstm = con.prepareStatement(sql);){
+			
+				ResultSet rs = pstm.executeQuery();
+			List<TeamDTO> result = new ArrayList<TeamDTO>();
+			
+			while(rs.next()) {
+				int id = rs.getInt("id");
+				String name = rs.getString("name");
+				String contact = rs.getString("contact");
+				Timestamp update_date = rs.getTimestamp("update_date");
+				
+				TeamDTO dto = new TeamDTO(id,name,contact,update_date);
+				result.add(dto);
+			}
+		}
+		return result;
+
+	}
+
+
+
+}

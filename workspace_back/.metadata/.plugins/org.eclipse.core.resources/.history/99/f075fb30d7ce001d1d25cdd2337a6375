@@ -1,0 +1,39 @@
+package 복습;
+
+public class InsertExam {
+	public static void main(String[] args) {
+		TeamDAO dao = new TeamDAO();
+		// 1. 오라클에 테이블 생성하기
+		// 테이블 명 : team_contact
+		// id 주키 숫자 1001~무한
+		// name 문자열(30) not null
+		// contact 문자열 (11) not null
+		// update_date timestamp default sysdate not null
+		
+		// 시퀀스 명 : team_contact_seq
+		
+		// 2. TeamDTO 생성
+		
+		// 3. TeamDAO 생성
+		// > DB 연결은 DBCP를 사용할 것
+		// > 자원관리는 try~resource 를 사용할 것
+		
+		// 4. InsertExam 에서 팀원 전원의 정보를 입력하는 코드 작성할 것
+ 		//		( 메뉴 띄우거나 Scanner 로 입력할 필요 없음. )
+		try {
+			int result = dao.insert(new TeamDTO(0,"정수","01043194666",null));
+			if(result==1) {
+				System.out.println("입력 성공");
+			}else {
+				System.out.println("입력 실패");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("입력 실패");
+		}
+		
+		// 5. SelectExam 에서 입력된 모든 팀원 정보를 출력할 것.
+		
+	}
+
+}

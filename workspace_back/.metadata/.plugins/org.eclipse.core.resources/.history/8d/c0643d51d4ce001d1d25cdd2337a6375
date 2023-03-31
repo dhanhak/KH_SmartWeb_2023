@@ -1,0 +1,27 @@
+package º¹½À;
+
+import java.sql.Connection;
+import java.sql.Driver;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class TeamDAO {
+	
+	private Connection getConntion() throws Exception{
+		String url="jdbc:oracle:thin:@localhost:1521:xe";
+		String id="kh";
+		String pw = "th";
+		Connection con = DriverManager.getConnection(url,id,pw);
+		return con;
+	}
+	
+	public int insert(TeamDTO dto) throws Exception {
+		String sql ="INSERT INTO VALUES(?,?,?,sysdate)";
+		Connection con = this.getConntion();
+		PreparedStatement pstm = con.prepareStatement(sql);
+		pstm.setInt(1, dto.getId());
+		return 0;
+	}
+
+}

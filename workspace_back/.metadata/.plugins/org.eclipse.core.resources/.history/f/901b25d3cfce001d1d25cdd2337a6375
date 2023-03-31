@@ -1,0 +1,9 @@
+package º¹½À;
+
+public class TeamDTO {
+	private int id;
+	private String name;
+	private String contact;
+	
+
+}

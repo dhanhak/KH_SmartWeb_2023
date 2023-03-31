@@ -1,0 +1,17 @@
+package 복습;
+
+import java.util.List;
+
+public class SelectExam {
+	public static void main(String[] args) {
+		// 5. SelectExam 에서 입력된 모든 팀원 정보를 출력할 것.
+		TeamDAO dao = new TeamDAO();
+		try {
+			dao.select();
+		} catch (Exception e) {
+			System.out.println("연결 실패");
+			e.printStackTrace();
+		}
+	}
+
+}
