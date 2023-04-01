@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="C:\Users\82104\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.2.v20230129-1123\jre" version="19.0.2"/>
     <libraryInfo home="C:\Program Files\ojdkbuild\java-11-openjdk-11.0.15-1" version="11.0.15"/>
+    <libraryInfo home="C:\Users\82104\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_19.0.2.v20230129-1123" version="19.0.2"/>
 </libraryInfos>
